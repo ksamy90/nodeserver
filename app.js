@@ -44,6 +44,6 @@ app.get('/bad',(req,res) =>{
 	});
 });
 
-app.listen(8080, () =>{
+app.listen(process.env.PORT,process.env.IP, () =>{
 	console.log('Server Started');
 });
